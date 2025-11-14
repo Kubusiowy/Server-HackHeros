@@ -34,4 +34,14 @@ dependencies {
     //contentNegotiation
     implementation("io.ktor:ktor-server-content-negotiation")
     implementation("io.ktor:ktor-serialization-kotlinx-json")
+
+    //exposed and SQL connection
+    implementation("org.jetbrains.exposed:exposed-core:0.55.0")
+    implementation("org.jetbrains.exposed:exposed-dao:0.55.0")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.55.0")
+    implementation("com.zaxxer:HikariCP:5.1.0")
+    implementation("mysql:mysql-connector-j:8.0.33")
+        // time stamp
+        implementation("org.jetbrains.exposed:exposed-java-time:0.55.0")
+
 }
