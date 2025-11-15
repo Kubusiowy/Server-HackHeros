@@ -11,7 +11,7 @@ object DatabaseFactory {
 
     fun init(){
         val config = HikariConfig().apply {
-            jdbcUrl = "jdbc:mysql://localhost:8889/HackhHeros"
+            jdbcUrl = "jdbc:mysql://localhost:8889/HackHeros"
             driverClassName = "com.mysql.cj.jdbc.Driver"
             username = "root"
             password = "root"
