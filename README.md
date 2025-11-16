@@ -6,9 +6,6 @@ Backend przygotowany na konkurs HackHeroes.
 
 Poniżej zestawienie głównych narzędzi i technologii wykorzystanych w projekcie.
 
-## Technologie
-
-## Technologie
 
 | Obszar        | Technologia |
 |---------------|:-----------:|
