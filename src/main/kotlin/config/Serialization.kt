@@ -1,4 +1,4 @@
-package com.hackheros
+package com.hackheros.config
 
 import io.ktor.server.application.*
 import io.ktor.server.plugins.contentnegotiation.ContentNegotiation

@@ -1,4 +1,4 @@
-package com.hackheros
+package com.hackheros.config
 
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.*
