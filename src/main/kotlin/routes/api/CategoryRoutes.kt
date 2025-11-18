@@ -14,19 +14,20 @@ fun Application.apiCategoryRoutes(){
     val LessonRepo = LessonRepository()
 
     routing {
-        route("/api/categories") {
+        route("categories") {
             get {
                 val categories = Categoryrepo.getAllCategories()
                 call.respond(categories)
             }
 
-            get("/{id}/lessons"){
-                val id = call.parameters["id"]?.toIntOrNull() ?: return@get call.respond(HttpStatusCode.BadRequest,
-                    mapOf("error" to "invalid category id parameter"))
 
+            get("/lessons/{id}"){
+                val id = call.parameters["id"]?.toIntOrNull()?: return@get call.respond(HttpStatusCode.BadRequest,
+                    mapOf("error" to "invalid category id parameter"))
                 val lessons = LessonRepo.getAllLessonsForCateogry(id)
                 call.respond(lessons)
             }
+
         }
     }
 }

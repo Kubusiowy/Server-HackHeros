@@ -16,7 +16,7 @@ class LessonRepository{
                     id = row[Lessons.id].value,
                     name=row[Lessons.name],
                     description=row[Lessons.description],
-                    category_id = row[Categories.id].value
+                    category_id = row[Lessons.categoryId].value
                 )
 
             }
