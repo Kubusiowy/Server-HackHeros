@@ -21,19 +21,6 @@ class CategoryRepository{
     }
 
 
-    suspend fun getAllLessonsForCateogry(categoryId:Int):List<LessonReponse> = dbQuery {
-        Lessons
-            .selectAll().where { Lessons.categoryId eq categoryId }
-            .map { row ->
-                LessonReponse(
-                    id = row[Lessons.id].value,
-                    name=row[Lessons.name],
-                    description=row[Lessons.description],
-                    category_id = row[Categories.id].value
-                )
 
-            }
-
-    }
 
 }
