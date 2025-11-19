@@ -93,3 +93,120 @@ W katalogu projektu wykonaj:
 ```bash
 ./gradlew run
 ```
+</br></br></br></br>
+## Endpointy API
+
+Poniżej znajduje się kompletna dokumentacja endpointów dostępnych w serwerze.
+</br>
+### Status serwera
+
+**GET** `/api/status`
+
+Sprawdza, czy backend działa poprawnie.
+
+**Przykładowa odpowiedź:**
+```txt
+OK
+```
+
+</br>
+
+### Kategorie
+
+
+**GET** `/api/categories`
+
+Zwraca listę wszystkich kategorii.
+
+**Przykładowa odpowiedź:**
+
+```json
+[
+  {
+        "id": 1,
+        "name": "Algorytmy",
+        "description": "Podstawy algorytmiki, złożoność obliczeniowa i proste struktury danych."
+  }
+]
+```
+</br>
+
+### Lekcje w kategorii
+
+
+**GET** `/api/categories/lesson/{id}`
+
+`{id}` — identyfikator kategorii (`categories.id`)
+
+Zwraca wszystkie lekcje należące do wskazanej kategorii.
+
+**Przykładowa odpowiedź:**
+
+```json
+[
+    {
+        "id": 3,
+        "name": "Podstawy cyberbezpieczeństwa",
+        "description": "Bezpieczne hasła, uwierzytelnianie oraz podstawowe typy ataków.",
+        "category_id": 2
+    }
+]
+```
+</br>
+
+### Materiały edukacyjne dla lekcji
+
+
+**GET** `/api/education-materials/lessons/{id}`
+
+`{id}` — identyfikator lekcji (`lesson.id`)
+
+Zwraca listę materiałów edukacyjnych powiązanych z daną lekcją.
+
+**Przykładowa odpowiedź:**
+
+```json
+[
+    {
+        "id": 1,
+        "title": "Algorytmy w życiu codziennym",
+        "lessonId": 1
+    }
+]
+```
+</br>
+
+### Paragrafy dla materiału edukacyjnego
+
+
+**GET** `/api/education-materials/paragraphs/{id}`
+
+`{id}` — identyfikator materiału (`education_materials.id`)
+
+Zwraca paragrafy przypisane do wybranego materiału.
+
+**Przykładowa odpowiedź:**
+
+```json
+[
+       {
+        "id": 1,
+        "paragraph_number": 1,
+        "header": "Co to jest algorytm?",
+        "content": "Algorytm to przepis na rozwiązanie problemu. Może to być przepis na ciasto albo instrukcja dla programu.",
+        "material_id": 1
+    }
+]
+```
+
+</br>
+
+### Podsumowanie API
+
+| Endpoint                                         | Metoda | Opis                               |
+|--------------------------------------------------|--------|------------------------------------|
+| `/api/status`                                          | GET    | Status serwera                    |
+| `/api/categories`                                | GET    | Lista kategorii                   |
+| `/api/categories/lessons/{id}`                   | GET    | Lekcje danej kategorii            |
+| `/api/education-materials/lesson/{id}`           | GET    | Materiały edukacyjne dla lekcji   |
+| `/api/education-materials/paragraphs/{id}`       | GET    | Paragrafy materiału edukacyjnego  |
