@@ -14,7 +14,7 @@ fun Application.apiEducationMaterialsRoutes() {
 
     routing {
 
-        route("education-materials") {
+        route("api/education-materials") {
             get("/lesson/{id}"){
                 val id = call.parameters["id"]?.toIntOrNull() ?: return@get call.respond(HttpStatusCode.BadRequest,
                     mapOf("error" to "Missing or malformed id"))

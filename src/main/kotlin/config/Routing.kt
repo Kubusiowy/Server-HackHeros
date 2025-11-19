@@ -10,12 +10,14 @@ import io.ktor.server.routing.*
 fun Application.configureRouting() {
 
     routing {
-        get("/api/") {
-            call.respondText("OK")
-        }
+            get("/api/status") {
+                call.respondText("OK")
+            }
+
     }
 
-    apiCategoryRoutes()
 
+    apiCategoryRoutes()
     apiEducationMaterialsRoutes()
+
 }
