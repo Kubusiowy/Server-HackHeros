@@ -9,7 +9,6 @@ import io.ktor.server.routing.route
 import io.ktor.server.routing.routing
 
 fun Application.apiEducationMaterialsRoutes() {
-
     val MaterialRepo = EducationMaterialsRepository()
 
     routing {
@@ -34,4 +33,5 @@ fun Application.apiEducationMaterialsRoutes() {
         }
 
     }
+
 }

@@ -11,5 +11,6 @@ data class QuestionResponse(
     val answerC: String?,
     val answerD: String?,
     val correctAnswer: String, // do wywalenia pozniej
-    val expGain: Int
+    val expGain: Int,
+    val lessonId:Int
 )

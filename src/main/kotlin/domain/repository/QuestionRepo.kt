@@ -20,7 +20,8 @@ class QuestionRepository{
                     answerC = row[Questions.answerC],
                     answerD = row[Questions.answerD],
                     correctAnswer = row[Questions.correctAnswer],
-                    expGain = row[Questions.expGain]
+                    expGain = row[Questions.expGain],
+                    lessonId = row[Questions.lessonId].value
                 )
             }
     }

@@ -28,6 +28,13 @@ fun Application.apiCategoryRoutes(){
                 call.respond(lessons)
             }
 
+            get("/passed-lessons/user/{id}"){
+                val id = call.parameters["id"]?.toIntOrNull()?: return@get call.respond(HttpStatusCode.BadRequest,
+                    mapOf("error" to "invalid category id parameter"))
+                val passedLessons = LessonRepo.getAllPassedLessons(id)
+                call.respond(passedLessons)
+            }
+
         }
     }
 }
