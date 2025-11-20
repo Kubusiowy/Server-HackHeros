@@ -41,7 +41,9 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-dao:0.55.0")
     implementation("org.jetbrains.exposed:exposed-jdbc:0.55.0")
     implementation("com.zaxxer:HikariCP:5.1.0")
-    implementation("com.mysql:mysql-connector-j:8.0.33")
+
+    //mariaDB
+    implementation("org.mariadb.jdbc:mariadb-java-client:3.3.3")
         // time stamp
         implementation("org.jetbrains.exposed:exposed-java-time:0.55.0")
 

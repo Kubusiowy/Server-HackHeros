@@ -11,10 +11,10 @@ object DatabaseFactory {
 
     fun init(){
         val config = HikariConfig().apply {
-            jdbcUrl = "jdbc:mysql://localhost:3306/HackHeros" //port zostaje 8889 na macu,   a na windowsie 3306
-            driverClassName = "com.mysql.cj.jdbc.Driver"
+            jdbcUrl = "jdbc:mariadb://localhost:3306/HackHeros"
+            driverClassName = "org.mariadb.jdbc.Driver"
             username = "root"
-            password = "" //xampp(widnows) brak hasla ; macOs (mamp) root
+            password = "" //na serwer ZAQ!2wsx
             maximumPoolSize = 5
             isAutoCommit = false
             transactionIsolation = "TRANSACTION_REPEATABLE_READ"
