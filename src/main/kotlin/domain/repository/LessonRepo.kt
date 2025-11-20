@@ -30,10 +30,9 @@ class LessonRepository{
             .map { row->
                 PassedLessonResponse(
                     id = row[PassedLessons.id].value,
-                    user_id = row[PassedLessons.userId].value,
-                    lesson_id = row[PassedLessons.lessonId].value,
-                    completedAt = row[PassedLessons.completedAt].toString(),
-                    correctAnswer = row[PassedLessons.correctAnswers]
+                    lessonId = row[PassedLessons.lessonId].value,
+                    correctAnswers = row[PassedLessons.correctAnswers],
+                    completedAt = row[PassedLessons.completedAt].toString()
                 )
             }
     }

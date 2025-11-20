@@ -4,7 +4,7 @@ import com.hackheros.config.configureHTTP
 import com.hackheros.config.configureRouting
 import com.hackheros.config.configureSecurity
 import com.hackheros.config.configureSerialization
-import com.hackheros.config.configureStatusPage
+import com.hackheros.config.configureStatusPages
 import com.hackheros.database.DatabaseFactory
 import io.ktor.server.application.*
 import io.ktor.server.engine.embeddedServer
@@ -22,7 +22,7 @@ fun Application.module() {
     configureHTTP()
     configureSecurity()
     configureSerialization()
-    configureStatusPage()
+    configureStatusPages()
     configureRouting()
 
 }

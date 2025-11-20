@@ -14,8 +14,8 @@ fun Application.apiCategoryRoutes(){
     val LessonRepo = LessonRepository()
 
     routing {
-        route("api/categories") {
-            get {
+        route("api") {
+            get("/categories") {
                 val categories = Categoryrepo.getAllCategories()
                 call.respond(categories)
             }

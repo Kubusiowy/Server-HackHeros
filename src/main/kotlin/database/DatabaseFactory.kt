@@ -11,10 +11,10 @@ object DatabaseFactory {
 
     fun init(){
         val config = HikariConfig().apply {
-            jdbcUrl = "jdbc:mariadb://localhost:3306/HackHeros"
-            driverClassName = "org.mariadb.jdbc.Driver"
+            jdbcUrl = "jdbc:mysql://localhost:3306/HackHeros"
+            driverClassName = "com.mysql.cj.jdbc.Driver"
             username = "root"
-            password = "" //na serwer ZAQ!2wsx
+            password = ""
             maximumPoolSize = 5
             isAutoCommit = false
             transactionIsolation = "TRANSACTION_REPEATABLE_READ"
