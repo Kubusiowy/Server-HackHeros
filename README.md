@@ -19,6 +19,9 @@ Poniżej zestawienie głównych narzędzi i technologii wykorzystanych w projekc
 
 Repozytorium projektu dostępne jest pod adresem:  
 **[Pobierz projekt z GitHub](https://github.com/Kubusiowy/Server-HackHeros)**
+---
+## backend dziala na serwerze u mnie w domu pod adresem -> http://194.28.222.28:8080
+ 
 
 ---
 
@@ -27,7 +30,7 @@ Repozytorium projektu dostępne jest pod adresem:
 Aby uruchomić projekt, wymagane są:
 
 - JDK 21 (Temurin)
-- MySQL uruchomiony na porcie `8889`
+- MySQL uruchomiony na porcie `3306`
 - IntelliJ IDEA (zalecane Ultimate, dopuszczalne Community)
 - Gradle (projekt korzysta z wbudowanego wrappera)
 - 
