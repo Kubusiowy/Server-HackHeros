@@ -19,10 +19,11 @@ fun main() {
 fun Application.module() {
     DatabaseFactory.init()
 
-    configureHTTP()
     configureSecurity()
+    configureHTTP()
     configureSerialization()
     configureStatusPages()
     configureRouting()
+
 
 }
