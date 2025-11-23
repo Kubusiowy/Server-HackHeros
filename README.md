@@ -20,7 +20,7 @@ Poniżej zestawienie głównych narzędzi i technologii wykorzystanych w projekc
 Repozytorium projektu dostępne jest pod adresem:  
 **[Pobierz projekt z GitHub](https://github.com/Kubusiowy/Server-HackHeros)**
 ---
-## backend dziala na serwerze pod adresem -> http://194.28.222.28:8080
+## backend dziala na serwerze pod adresem prywatnym ->https://eduscroll.pl/api/ping
  
 
 ---
