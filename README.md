@@ -137,7 +137,7 @@ Zwraca listę wszystkich kategorii.
 ### Lekcje w kategorii
 
 
-**GET** `/api/categories/lesson/{id}`
+**GET** `/api/categories/{id}/lesson`
 
 `{id}` — identyfikator kategorii (`categories.id`)
 
@@ -208,7 +208,7 @@ Zwraca paragrafy przypisane do wybranego materiału.
 
 | Endpoint                                         | Metoda | Opis                               |
 |--------------------------------------------------|--------|------------------------------------|
-| `/api/status`                                          | GET    | Status serwera                    |
+| `/api/status`                                          | GET    | Status serwera                |
 | `/api/categories`                                | GET    | Lista kategorii                   |
 | `/api/categories/lessons/{id}`                   | GET    | Lekcje danej kategorii            |
 | `/api/education-materials/lesson/{id}`           | GET    | Materiały edukacyjne dla lekcji   |
